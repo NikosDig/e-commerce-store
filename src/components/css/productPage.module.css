@@ -1,0 +1,55 @@
+/* ProductPage.css */
+
+.product-page {
+    padding: 20px;
+  }
+  
+  .product-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .product-price {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .discounted-price {
+    font-size: 1.5em;
+    color: green; /* Color for the discounted price */
+  }
+  
+  .original-price {
+    text-decoration: line-through;
+    margin-left: 10px;
+    color: red; /* Color for the original price */
+  }
+  
+  .discount-percentage {
+    margin-left: 10px;
+    color: orange; /* Color for the discount percentage */
+  }
+  
+  .add-to-cart-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: darkblue; /* Darker blue on hover */
+  }
+  
+  .product-reviews {
+    margin-top: 30px;
+  }
+  
+  .review {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+  }
+  

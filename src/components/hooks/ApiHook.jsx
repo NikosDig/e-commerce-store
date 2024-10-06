@@ -13,7 +13,7 @@ function useApi(url) {
           setIsError(false);
           const response = await fetch(url);
           const result = await response.json();
-          console.log('API response:', result); // Log the response to see its structure
+          //console.log('API response:', result); // Log the response to see its structure
           if (Array.isArray(result.data)) {
             setItems(result.data);
           } else {
@@ -37,3 +37,6 @@ function useApi(url) {
   
 
 export default useApi;
+
+
+
