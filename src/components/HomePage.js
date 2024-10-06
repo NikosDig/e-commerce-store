@@ -17,10 +17,10 @@ function Home() {
 
   return (
     <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px' }}>
-      {products.length === 0 ? (
+      {items.length === 0 ? (
         <div>No products available</div>
       ) : (
-        products.map((product) => (
+        items.map((product) => (
           <ImgMediaCard
             key={product.id}
             title={product.title}
