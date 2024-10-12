@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 function useApi(url) {
     const [items, setItems] = useState([]);
