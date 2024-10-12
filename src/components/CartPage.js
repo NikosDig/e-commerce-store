@@ -1,14 +1,14 @@
-
 import React from 'react';
 import { useCart } from './hooks/CartContext';
 import { useNavigate } from 'react-router-dom';
+import "./css/CartPage.css"; // Ensure correct import
 
 function CartPage() {
     const { cart, removeFromCart, clearCart } = useCart(); // Access the cart and remove/clear functions
     const navigate = useNavigate(); // Initialize useNavigate
 
     if (cart.length === 0) {
-        return <div>Your cart is empty.</div>;
+        return <div className="empty-cart-message">Your cart is empty.</div>; // Add a class for styling
     }
 
     // Calculate total amount
@@ -22,13 +22,13 @@ function CartPage() {
     };
 
     return (
-        <div>
+        <div className="cart-page"> {/* Add class for styling */}
             <h1>Shopping Cart</h1>
             <ul>
                 {cart.map((item) => (
                     <li key={item.id}>
                         <h2>{item.title}</h2>
-                        <img src={item.image.url} alt={item.image.alt || item.title} style={{ width: '100px' }} />
+                        <img src={item.image.url} alt={item.image.alt || item.title} />
                         <p>Price: ${(item.price * item.quantity).toFixed(2)}</p>
                         {item.discountedPrice && (
                             <>
@@ -46,7 +46,7 @@ function CartPage() {
                 ))}
             </ul>
             <h2>Total Amount: ${totalAmount}</h2>
-            <button onClick={handleCheckout}>Checkout</button> {/* Checkout button */}
+            <button className="checkout-button" onClick={handleCheckout}>Checkout</button> {/* Checkout button */}
         </div>
     );
 }
