@@ -1,0 +1,129 @@
+/* container */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+/* General styles for the product page */
+.product-page {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styles */
+.product-page h1 {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Image styling */
+.product-page img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Description and price styling */
+.product-page p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* Price styles */
+.product-page .price {
+  font-weight: bold;
+  font-size: 18px;
+}
+.originalPrice{
+  text-decoration: line-through;
+}
+
+/* Discounted price styles */
+.product-page .discounted-price {
+  color: #dc3545; /* Red for discounts */
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Button styling */
+.add-to-cart-button {
+  background-color: #28a745; /* Green */
+  color: white;
+  padding: 15px 120px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Reviews section styling */
+.reviews-section {
+  margin-top: 20px;
+}
+
+.reviews-section h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Review item styling */
+.review-item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.review-item p {
+  margin: 0;
+}
+
+.review-item strong {
+  font-size: 16px;
+}
+
+.review-item:first-child {
+  padding-top: 0;
+}
+
+.review-item:last-child {
+  border-bottom: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .product-page {
+    padding: 15px;
+  }
+
+  .add-to-cart-button {
+    padding: 15px 100px;
+  }
+
+  .product-page h1 {
+    font-size: 20px;
+  }
+
+  .product-page .price,
+  .product-page .discounted-price {
+    font-size: 16px;
+  }
+}
