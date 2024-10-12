@@ -1,0 +1,98 @@
+/* Home.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background for contrast */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Search Bar */
+input[type="text"] {
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Larger text for better visibility */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: border-color 0.3s; /* Transition effect */
+}
+
+/* Centering the Search Bar */
+.searchBarContainer {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    margin-bottom: 20px; /* Space below the search bar */
+}
+
+.searchBarContainer input {
+    padding: 10px;
+    width: 90%; /* Set width as needed */
+    max-width: 700px; /* Optional: Max width for larger screens */
+}
+
+
+/* Search Bar Focus State */
+input[type="text"]:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none; /* Remove outline */
+}
+
+/* Product List */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Space between cards */
+    justify-content: center; /* Center align the cards */
+}
+
+.MuiPaper-root,.MuiPaper-elevation ,.MuiPaper-rounded ,.MuiPaper-elevation1 ,.MuiCard-root ,.css-1ri6ub7-MuiPaper-root-,.MuiCard-root {
+    height: 600px;
+}
+
+/* Card Style */
+.product-card {
+    background-color: #fff; /* White background for cards */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    overflow: hidden; /* Prevent overflow */
+    transition: transform 0.3s; /* Animation effect */
+    text-align: center; /* Center align text */
+}
+
+/* Card Hover Effect */
+.product-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Card Image */
+.product-card img {
+    width: 100%; /* Full width */
+    min-width: 315px;
+    height: 345px; /* Maintain aspect ratio */
+}
+
+/* Card Title */
+.product-card h2 {
+    font-size: 18px;
+    margin: 10px 0; /* Space around title */
+}
+
+/* Card Description */
+.product-card p {
+    font-size: 14px;
+    color: #555; /* Darker gray for description */
+    margin: 10px 0; /* Space around description */
+}
+
+/* Price Styles */
+.product-card .price {
+    font-weight: bold; /* Bold price */
+    color: #333; /* Dark color */
+}
+
+/* Discount Price Styles */
+.product-card .discounted-price {
+    color: #d9534f; /* Red for discounted price */
+    font-weight: bold; /* Bold for emphasis */
+}
